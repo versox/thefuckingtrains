@@ -37,7 +37,7 @@ function App() {
             <p>Not knowing when their paths may cross again, the pair communicates rarely. Regardless, the boy's heart continues to sing a song for the girl. Waiting for the day they might reunite.</p>
           </div>
           <div className="happy">
-            <h1>Happy Valentines Day!</h1>
+            <h1>Happy Valentines Day! ❤️</h1>
             <p>Heeeeeeyyyy Vi! Certainly been missing you ʕっ• ᴥ • ʔっ</p>
             <p>I hope you are doing well in Amsterdam with UvA / jazz band / life. Don't forget you are a beautiful human :p </p>
           </div>
