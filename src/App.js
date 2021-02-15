@@ -63,7 +63,7 @@ function App() {
             <p>Together explore, the cosmos, the trittens</p>
             <p>Chaos ensues, that much is given.</p>
             <br/>
-            <p>my heart hurts cause there's a girl out there</p>
+            <p>my heart hurts cause you're the girl out there</p>
             <p>with love in her eyes, and flowers in her hair</p>
           </div>
           <div className="memories">
