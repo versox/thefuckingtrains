@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Source+Sans+Pro:wght@300&family=Work+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noticia+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
+
+$transp: rgba(0, 0, 0, 0);
+$dark: #1f1f1f;
+// $ink: #47463d;
+$ink: #2E2D27;
+
+* {
+  margin: 0;
+}
+
+body {
+  background-color: $dark;
+}
+
+.header {
+  &_bg {
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+  }
+  &_bar {
+    position: relative;
+    height: 3rem;
+    margin-top: -3.5rem;
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+    background: linear-gradient($transp, $dark 3rem);
+    // box-shadow: 0 0.3em 0.3em 0 rgba(12, 12, 12, 0.75);
+  }
+}
+
+.newspaper {
+  position: relative;
+  padding: 1rem;
+  max-width: 90%;
+  min-width: 80%;
+  // background-color: #f5f2d5;
+  // background-color: #B4AD93;
+  // background-color: #A6A5A1;
+
+  // background-color: #A6A1A1;
+  background-color: #bbaeb2;
+  box-shadow: 0.5rem -0.5rem 0.3rem 0 rgba(0, 0, 0, 0.75);
+  text-align: center;
+  margin-top: -1.5rem;
+  font-size: 1rem;
+    @media screen and (min-width: 700px) {
+      // font-size: 1.3rem;
+      font-size: 2vw;
+    }
+
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "lineT lineT lineT"  
+    ". title date"
+    "lineB lineB lineB"
+    "main main memories"
+    "happy happy memories"
+    "love love memories";
+  &__icon {
+    justify-self: start;
+    align-self: center;
+    margin-left: 1rem;
+    svg {
+      height: 3.5rem;
+      width: 3rem;
+    }
+  }
+  &__title {
+    grid-area: title;
+    h1 {
+      font-family: 'Notica Text', serif;
+      font-size: 1.8em;
+      color: $ink;
+      // text-decoration: underline;
+    }
+    h2 {
+      color: $ink;
+      font-family: 'Notica Text', serif;
+      font-size: 1.2em;
+    }
+  }
+  &__date {
+    grid-area: date;
+    font-size: 0.9em;
+    justify-self: end;
+    align-self: center;
+    padding-right: 1rem;
+  }
+  &__line {
+    background-color: $ink;
+    height: 3px;
+    &--t {
+      grid-area: lineT;
+    }
+    &--b {
+      grid-area: lineB;
+      // margin-bottom: 1rem;
+    }
+  }
+}
+
+.article {
+  font-size: 1rem;
+  margin: 1rem 2rem;
+  color: $ink;
+  h1 {
+    text-align: left;
+    margin-bottom: 0.5rem;
+  }
+  p {
+    font-size: 1.1em;
+    text-align: left;
+    margin-bottom: 0.5rem;
+    margin-left: 1rem;
+    font-family: 'Noto Serif JP', serif;;
+  }
+}
+
+.main-article {
+  grid-area: main;
+
+  .lead {
+    // text-indent: 1rem;
+  }
+}
+
+.memories {
+  grid-area: memories;
+  font-size: 1rem;
+  margin: 1rem 0.5rem;
+  text-align: left;
+  ul {
+    padding-left: 1rem;
+    // padding-top: 0.5rem;
+  }
+  li {
+    padding: 0.25rem;
+  }
+  h1 {
+    text-align: left;
+    // margin-bottom: 0.5rem;
+  }
+  h2 {
+    margin-left: -1rem;
+    margin-top: 0.5rem;
+  }
+}
+
+.thought {
+  object-fit: contain;
+  width: 12rem;
+  height: 12rem;
+  float:right;
+  margin-right: 1rem;
+  margin-left: 2rem;
+}
+
+.happy {
+  grid-area: happy;
+  margin: 1rem;
+  text-align: left;
+}
+
+.love {
+  font-size: 1rem;
+  grid-area: love;
+  margin: 1rem;
+  text-align: left;
+}
+
+.centered_rel {
+  display: flex;
+  justify-content: center;
+}
