@@ -13,7 +13,7 @@ $ink: #2E2D27;
 }
 
 body {
-  background-color: $dark;
+  background-color: black;
 }
 
 .header {
@@ -46,7 +46,9 @@ body {
 .paper {
   padding: 1.5rem;
   width: 50rem;
-  background-color: antiquewhite;
+  text-align: center;
+  background-color: rgba(226, 226, 226, 0.6);
+  // opacity: 0.6;
   color: $ink;
   h2 {
     margin-top: 0.5rem;
